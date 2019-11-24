@@ -64,11 +64,6 @@ class FunctionsUnitTest extends PHPUnit_TestCase
      *
      * @covers \PHPCompatibility\Sniff::getTestVersion
      *
-     * @requires PHP 5.3.2
-     * @internal Requirement is needed to be able to test the private method
-     *           using `ReflectionMethod::setAccessible()`.
-     *           The function itself works fine in PHP < 5.3.2.
-     *
      * @param string $testVersion The testVersion as normally set via the command line or ruleset.
      * @param string $expected    The expected testVersion array.
      *
@@ -125,11 +120,6 @@ class FunctionsUnitTest extends PHPUnit_TestCase
      *
      * @covers \PHPCompatibility\Sniff::getTestVersion
      *
-     * @requires PHP 5.3.2
-     * @internal Requirement is needed to be able to test the private method
-     *           using `ReflectionMethod::setAccessible()`.
-     *           The function itself works fine in PHP < 5.3.2.
-     *
      * @param string $testVersion The testVersion as normally set via the command line or ruleset.
      *
      * @return void
@@ -172,11 +162,6 @@ class FunctionsUnitTest extends PHPUnit_TestCase
      * @dataProvider dataGetTestVersionInvalidVersion
      *
      * @covers \PHPCompatibility\Sniff::getTestVersion
-     *
-     * @requires PHP 5.3.2
-     * @internal Requirement is needed to be able to test the private method
-     *           using `ReflectionMethod::setAccessible()`.
-     *           The function itself works fine in PHP < 5.3.2.
      *
      * @param string $testVersion The testVersion as normally set via the command line or ruleset.
      *
