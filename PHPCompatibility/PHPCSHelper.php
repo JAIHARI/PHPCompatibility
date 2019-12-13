@@ -326,8 +326,8 @@ class PHPCSHelper
         }
 
         if ($tokens[$stackPtr]['code'] !== \T_CLASS
-            && $tokens[$stackPtr]['type'] !== 'T_ANON_CLASS'
-            && $tokens[$stackPtr]['type'] !== 'T_INTERFACE'
+            && $tokens[$stackPtr]['code'] !== \T_ANON_CLASS
+            && $tokens[$stackPtr]['code'] !== \T_INTERFACE
         ) {
             return false;
         }
@@ -391,7 +391,7 @@ class PHPCSHelper
         }
 
         if ($tokens[$stackPtr]['code'] !== \T_CLASS
-            && $tokens[$stackPtr]['type'] !== 'T_ANON_CLASS'
+            && $tokens[$stackPtr]['code'] !== \T_ANON_CLASS
         ) {
             return false;
         }
